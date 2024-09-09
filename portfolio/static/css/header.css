@@ -1,0 +1,97 @@
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 50px;
+}
+
+/* Estilo personalizado para el header y el nav */
+.nav-link {
+    font-size: 0.5em;
+}
+
+.toggle-icon {
+    font-size: 1em;
+}
+
+/* Estilos personalizados para el navbar */
+.custom-navbar {
+    border-radius: 50px; /* Bordes redondeados */
+    padding: 5px 20px;
+    border: 2px solid #ccc;
+    background-color: #f8f9fa;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto; /* Centrado horizontal */
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 14px;
+    padding: 2px;
+    color: #555;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #007bff; /* Color al pasar el cursor */
+}
+
+.custom-toggler {
+    border: none;
+    background: none;
+    padding: 5px;
+    outline: none;
+}
+
+.custom-toggler:focus {
+    outline: none; /* Asegurar que no haya borde en el estado de enfoque */
+    box-shadow: none; /* Asegurar que no haya sombra al hacer clic */
+}
+
+.custom-toggler i {
+    font-size: 1.5rem; /* Tamaño del ícono */
+    color: #555; /* Color del ícono */
+    transition: transform 0.3s ease;
+}
+
+.navbar-toggler.collapsed i {
+    transform: rotate(0);
+}
+
+.navbar-toggler:not(.collapsed) i {
+    transform: rotate(180deg); /* Rotar la flecha hacia arriba cuando está expandido */
+}
+
+/* Modo oscuro para el navbar */
+body.dark-mode .custom-navbar {
+    background-color: #333;
+    border-color: #555;
+}
+
+body.dark-mode .navbar-nav .nav-link {
+    color: #fff;
+}
+
+body.dark-mode .navbar-nav .nav-link:hover {
+    color: #ff568e;
+}
+
+body.dark-mode .toggle-icon {
+    color: #ff568e;
+}
+
+body.light-mode .toggle-icon {
+    color: #000;
+}
+
+@media (max-width: 992px) {
+    .custom-navbar {
+        padding: 5px 10px; /* Reducir el padding en pantallas pequeñas */
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        font-size: 1rem; /* Ajustar el tamaño de la fuente */
+    }
+}
