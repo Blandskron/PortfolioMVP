@@ -1,34 +1,41 @@
-{% load static %}
 <div>
-    <img style="width: 150px;" src="{% static 'img/logoLargo.png' %}" alt="logo">
+    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 500.000000 500.000000"
+    preserveAspectRatio="xMidYMid meet" class="logo">
+   <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)"
+   fill="currentColor" stroke="none">
+   <path d="M2240 4789 c-30 -4 -84 -11 -120 -14 -104 -11 -248 -48 -395 -103
+   -173 -64 -258 -103 -370 -171 -33 -20 -72 -43 -88 -51 -56 -31 -222 -157 -296
+   -225 -89 -83 -264 -263 -270 -277 -2 -5 -39 -57 -82 -115 -43 -58 -79 -109
+   -79 -114 0 -4 -13 -27 -28 -51 -116 -174 -265 -575 -286 -768 -3 -30 -8 -66
+   -11 -80 -14 -61 -21 -270 -14 -426 12 -316 37 -427 176 -809 17 -48 86 -184
+   121 -239 13 -22 36 -60 51 -85 93 -163 340 -445 487 -555 157 -118 199 -148
+   279 -195 50 -29 97 -57 105 -62 87 -52 358 -161 485 -194 234 -61 613 -91 812
+   -65 337 45 430 68 673 167 91 37 255 118 280 138 8 6 44 29 80 50 154 92 332
+   246 505 436 63 70 170 216 216 296 74 128 120 212 134 248 9 22 23 54 30 71
+   26 57 94 249 109 309 24 95 54 288 66 430 10 108 10 161 -4 315 -8 102 -18
+   196 -21 210 -2 13 -12 65 -20 115 -9 49 -20 104 -25 120 -29 92 -67 198 -92
+   260 -16 39 -33 81 -37 95 -8 25 -61 123 -137 253 -50 87 -182 260 -273 359
+   -125 138 -350 324 -480 400 -119 68 -262 142 -321 164 -260 100 -367 130 -560
+   155 -153 20 -491 25 -600 8z m-276 -834 c72 -36 151 -76 176 -89 25 -13 92
+   -47 150 -75 58 -28 116 -57 130 -66 14 -8 57 -30 95 -48 39 -18 203 -100 365
+   -181 162 -81 319 -160 349 -174 29 -15 86 -58 126 -97 83 -80 136 -174 154
+   -270 14 -73 14 -225 1 -293 -18 -96 -80 -200 -175 -296 l-48 -47 52 -51 c63
+   -61 127 -153 155 -222 18 -44 21 -72 21 -211 l0 -160 -36 -75 c-44 -92 -142
+   -210 -216 -257 -76 -48 -636 -327 -703 -349 -88 -30 -251 -26 -358 9 -172 55
+   -322 205 -382 381 -16 47 -20 86 -20 181 0 133 15 195 67 284 37 63 39 66 120
+   148 59 59 92 82 175 123 289 141 389 196 376 207 -7 6 -128 68 -268 138 -140
+   70 -302 151 -360 180 l-105 52 -3 653 c-2 645 -1 669 27 670 2 0 63 -29 135
+   -65z"/>
+   <path d="M2125 3477 c-3 -7 -4 -137 -3 -291 l3 -278 325 -165 c380 -194 436
+   -217 500 -209 185 25 300 213 226 371 -42 92 -77 113 -567 358 -251 125 -462
+   227 -468 227 -6 0 -14 -6 -16 -13z"/>
+   <path d="M2605 1974 c-171 -86 -323 -163 -338 -171 -121 -64 -172 -214 -117
+   -341 48 -110 173 -175 292 -151 42 8 382 170 624 298 47 24 101 87 118 136 37
+   111 8 206 -90 293 -48 43 -140 92 -172 92 -4 0 -147 -70 -317 -156z"/>
+   </g>
+   </svg>
 </div>
-<nav class="navbar navbar-expand-lg navbar-light justify-content-center custom-navbar">
-    <!-- Botón para colapsar en móviles -->
-    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-chevron-down"></i>
-    </button>
-
-    <!-- Menú colapsable -->
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav text-center">
-            <li class="nav-item mx-2">
-                <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Articles</a>
-            </li>
-            <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Projects</a>
-            </li>
-            <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Speaking</a>
-            </li>
-            <li class="nav-item mx-2">
-                <a class="nav-link" href="#">Uses</a>
-            </li>
-        </ul>
-    </div>
-</nav>
 <div>
     <span class="toggle-btn ml-3">
         <i class="fas fa-moon toggle-icon" id="toggle-dark-light"></i>

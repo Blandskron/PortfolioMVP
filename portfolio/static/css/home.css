@@ -1,0 +1,42 @@
+.custom-card {
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Modo claro */
+body.light-mode .custom-card {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Modo oscuro */
+body.dark-mode .custom-card {
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+}
+
+/* Estilos para el texto y los íconos */
+.custom-card .card-title {
+    font-weight: bold;
+}
+
+.custom-card .card-footer a {
+    color: #000000; /* Color de los íconos de redes sociales en modo claro */
+}
+
+body.dark-mode .custom-card .card-footer a {
+    color: #ffffff; /* Color de los íconos de redes sociales en modo oscuro */
+}
+
+/* Estilos para las imágenes en modo oscuro */
+body.dark-mode .card-img-top {
+    border-color: #333;
+}
+
+/* Personalización adicional */
+.custom-card .card-footer a:hover {
+    text-decoration: none;
+}

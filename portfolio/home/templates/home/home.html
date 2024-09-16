@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Home
+{% endblock %}
+
+{% block content %}
+    <div class="card text-center my-4 custom-card">
+        <!-- Imagen en la parte superior -->
+        <img src="{% static 'img/perfil.png' %}" class="card-img-top rounded-circle mx-auto d-block" alt="Spencer's Photo" style="width: 150px; height: 150px; object-fit: cover; margin-top: -75px; border: 5px solid white;">
+        
+        <!-- Contenido de la card -->
+        <div class="card-body">
+            <h5 class="card-title">Desarrollador Full Stack <br> Python & Django</h5>
+            <p class="card-text">Soy Bastian Landskron, desarrollador fullstack. Desde mi marca personal, Blandskron, ofrezco soluciones tecnológicas personalizadas, trabajando con instituciones gubernamentales y grandes empresas. Mi enfoque está en el desarrollo de software, la inteligencia artificial y machine learning.</p>
+        </div>
+        
+        <!-- Logos de redes sociales -->
+        <div class="card-footer">
+            <a href="https://www.linkedin.com/in/blandskron/" target="_blank" class="mx-2">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://github.com/Blandskron" target="_blank" class="mx-2">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+        </div>
+    </div>
+{% endblock %}

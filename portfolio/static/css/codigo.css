@@ -1,0 +1,56 @@
+/* Estilo para bloques de código en modo claro */
+body.light-mode pre code {
+    background-color: #2b2b2b;  /* Fondo claro suave */
+    padding: 15px;  /* Espacio alrededor del código */
+    border-radius: 5px;  /* Bordes redondeados */
+    font-size: 1em;  /* Tamaño de fuente */
+    color: #ffffff;  /* Color del texto del código */
+    display: block;  /* Mostrar como bloque */
+    white-space: pre-wrap;  /* Mantener los saltos de línea */
+    overflow-x: auto;  /* Añadir desplazamiento horizontal si es necesario */
+    font-family: 'Courier New', Courier, monospace;  /* Fuente monoespaciada */
+}
+
+/* Estilo para bloques de código en modo oscuro */
+body.dark-mode pre code {
+    background-color: #f5f5f5;  /* Fondo oscuro suave */
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #000000;  /* Color del texto en un rosa claro (contrasta mejor en oscuro) */
+    display: block;
+    white-space: pre-wrap;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Estilo para código inline en modo claro */
+body.light-mode code {
+    background-color: #333;  /* Fondo ligeramente gris */
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 0.95em;
+    color: #ffffff;  /* Texto en rosa oscuro */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Estilo para código inline en modo oscuro */
+body.dark-mode code {
+    background-color: #f0f0f0 ;  /* Fondo más oscuro */
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 0.95em;
+    color: #000000;  /* Texto en rosa claro */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Ajustes para asegurar que el bloque de código no sea muy brillante ni fatiguante */
+body.light-mode pre code, body.dark-mode pre code {
+    line-height: 1.5;  /* Espaciado adecuado entre líneas para mejorar la legibilidad */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  /* Sombra suave para el bloque */
+}
+
+/* Sombra más suave en modo oscuro */
+body.dark-mode pre code {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}

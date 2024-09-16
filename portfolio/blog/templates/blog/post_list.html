@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Post List
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Mis Artículos sobre Python</h1>
+        
+        <div class="row">
+            {% for post in posts %}
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h2 class="card-title">{{ post.title }}</h2>
+                            <p class="card-text">{{ post.created_at|date:"d M Y" }}</p>
+                            <a href="{% url 'post_detail' post.id %}" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            {% empty %}
+                <div class="col-12">
+                    <p class="text-center">No hay artículos disponibles.</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

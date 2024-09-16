@@ -1,0 +1,43 @@
+/* Estilo del contenido del post */
+.content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+}
+
+/* Estilo del contenido en modo claro */
+body.light-mode .content {
+    color: #000000;  /* Texto en negro para modo claro */
+}
+
+/* Estilo del contenido en modo oscuro */
+body.dark-mode .content {
+    color: #e0e0e0;  /* Texto en gris claro para modo oscuro */
+}
+
+/* Estilo para el botón de volver al blog */
+.btn-secondary {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #333;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Modo claro para el botón */
+body.light-mode .btn-secondary {
+    background-color: #333;  /* Botón oscuro en modo claro */
+    color: #ffffff;
+}
+
+/* Modo oscuro para el botón */
+body.dark-mode .btn-secondary {
+    background-color: #4d4d4d;  /* Botón gris oscuro en modo oscuro */
+    color: #ffffff;
+}
+
+/* Hover efecto en ambos modos */
+.btn-secondary:hover {
+    background-color: #555;  /* Efecto de hover más claro */
+}

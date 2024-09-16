@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Post Title
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-5">
+        <!-- Título del post -->
+        <h1 class="text-center mb-4">{{ post.title }}</h1>
+
+        <!-- Fecha de creación -->
+        <p class="text-center">{{ post.created_at|date:"d M Y" }}</p>
+
+        <!-- Contenido del post -->
+        <div class="content mt-4">
+            {{ post.content|safe }}
+        </div>
+
+        <!-- Botón para volver a la lista de artículos -->
+        <div class="text-center mt-5">
+            <a href="{% url 'post_list' %}" class="btn btn-secondary">Volver al blog</a>
+        </div>
+    </div>
+{% endblock %}
