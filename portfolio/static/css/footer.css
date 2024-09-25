@@ -1,0 +1,15 @@
+footer {
+    background-color: #1D1D1B;
+    padding: 20px;
+    text-align: center;
+}
+
+.horizontal {
+    width: 20%;
+}
+
+@media (max-width: 600px) {
+    .horizontal {
+        width: 50%;
+    }
+}
