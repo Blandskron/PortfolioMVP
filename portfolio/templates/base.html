@@ -18,17 +18,19 @@
     <link rel="stylesheet" href="{% static 'css/codigo.css' %}">
     <link rel="stylesheet" href="{% static 'css/postList.css' %}">  
     <link rel="stylesheet" href="{% static 'css/detallePost.css' %}">
+    <link rel="stylesheet" href="{% static 'css/forms.css' %}">   
+    <link rel="stylesheet" href="{% static 'css/whatsapp.css' %}">
     <link rel="stylesheet" href="{% static 'css/footer.css' %}">    
 </head>
 <body class="light-mode">
 
     <div class="wrapper">
         <header>
-            {% include 'header.html' %}
+            {% include 'includes/header.html' %}
         </header>
     
         <nav>
-            {% include 'nav.html' %}
+            {% include 'includes/nav.html' %}
         </nav>
     
         <main>
@@ -37,10 +39,11 @@
                 {% block content %}
                 {% endblock %}
             </div>
+            {% include 'includes/whatsapp.html' %}
         </main>
     
         <footer>
-            {% include 'footer.html' %}
+            {% include 'includes/footer.html' %}
         </footer>
     </div>
 

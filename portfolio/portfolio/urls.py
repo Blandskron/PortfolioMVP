@@ -16,11 +16,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from django.shortcuts import redirect 
+from django.shortcuts import redirect
+from django.conf.urls import handler404
+from error_pages.views import error_404 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
     path('', lambda request: redirect('home')),
     path('blog/', include('blog.urls')),
+    path('contacto/', include('contact.urls')),
+    path('accounts/', include('accounts.urls')),
+    path('proyectos/', include('proyectos.urls')),
 ]
+
+handler404 = 'error_pages.views.error_404'
